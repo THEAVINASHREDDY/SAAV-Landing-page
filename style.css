@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    
+
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition:5s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration:100s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    color: black;
+    font-family: 'quicksand' , sans-serif;
+
+
+}
+
+.time{
+    font-size: 8rem;
+}
+
+.datetime{
+    font-size: 2rem;
+}
+
+#greeting{
+    font-size: 4rem;
+}
+
+@media(max-width:700px){
+    #time{
+        font: size 6rem; ;
+    }
+}
+
+@keyframes animate{
+    0%{
+        background-image:url(3.jpg) ;
+
+
+    }20%{background-image: url(4.jpg);
+        
+    } 40%{
+        background-image:url(5.jpg) ;
+
+
+    }60%{
+        background-image:url(6.jpg) ;
+
+
+    }80%{
+        background-image:url(7.jpg) ;
+
+
+    } 100%{
+        background-image:url(8.jpg) ;
+
+
+    }
+
+}
